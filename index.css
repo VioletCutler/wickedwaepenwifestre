@@ -1,4 +1,49 @@
+:root {
+    /* Main Color Scheme */
+    --background-color: #3D2681;
+    --main-font-color: #EFF8D1;
+
+    --links: #ff9adf;
+    --links-visited-focus: #FF60CD;
+    --links-active: #FF60CD;
+
+    --waepen-wifestre-header: #52F9B2;
+
+    --footer-background: #240931;
+
+}
+
+body {
+    background: var(--background-color);
+    color: var(--main-font-color);
+}
+
+#waepen-wifestre-header {
+    color: var(--waepen-wifestre-header)
+}
+
+a {
+    color: var(--links);
+}
+
 img {
-    width: 100px;
-    height: 100px;
+    width: 40%;
+    height: 40%;
+    user-select: none;
+}
+
+.audio-tracks {
+    width: 80%;
+    max-width: 400px;
+}
+
+footer {
+    border-top: 1px solid var(--main-font-color);
+    position: sticky;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: var(--footer-background)
 }
